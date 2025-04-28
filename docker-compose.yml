@@ -1,7 +1,5 @@
 services:
   app:
-    build:
-      context: .
     image: nginx:alpine
     ports:
       - "83:80"
