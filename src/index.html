@@ -1,5 +1,117 @@
-<html>
-    <main>
-        <h1>My page!!!</h1>
-    </main>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<main>
+
+    <body>
+        <div id="header">
+            <section class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About me professionally</a></li>
+                        <li><a href="#portfolio">Outside of Software Engeieer</a></li>
+                        <!-- add the things youve done in IB - like math, add some travel + tv shows -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Studenting</p>
+                    <h1>Hellooo, welcome to my chill website :)</h1>
+                </div>
+            </section>
+        </div>
+
+        <!-- about me section -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="about-col-1">
+                        <img src="../images/Ivana Stojanova.jpg" alt="Photo of me">
+                    </div>
+
+                    <div class="about-col-2">
+                        <h1>About me</h1>
+                        <p> i love to read and eat and cry lorem impisssfhsdfadsfa</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="experience">
+                            <ul>
+                                <li><span>2023-2023</span>Kreta Restaurant Mezes and Grill</li>
+                                <li><span>kiki</span></li>
+                                <li><span>riki</span></li>
+                                <li><span>l</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Hard skills</span> C++, C#</li>
+                                <li><span>Inana</span></li>
+                                <li><span>Inana</span></li>
+                                <li><span>Inana</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span> 2021 - current</span> C++, C#</li>
+                                <li><span>uwc</span></li>
+                                <li><span>miwi</span></li>
+                                <li><span>k</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- portfolio  -->
+        <section id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My work</h1>
+
+            </div>
+            </div>
+
+            <!-- contact -->
+
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+
+                }
+            </script>
+
+
+
+    </body>
+
+</main>
+
 </html>
