@@ -4,36 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="../style.css">
-    <script src="https://kit.fontawesome.com/eaf35886c2.js" crossorigin="anonymous"></script></head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/eaf35886c2.js" crossorigin="anonymous"></script>
+</head>
 
 <main>
 
     <body>
         <section id="header">
-                <nav>
-                    <ul>
-                        <li><a href="#header"><strong>Home</strong></a></li>
-                        <li><a href="#about"><strong> me professionally</strong></a></li>
-                        <li><a href="#portfolio"><strong> of Software Engeieer</strong></a></li>
-                        <!-- add the things youve done in IB - like math, add some travel + tv shows -->
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav>
+                <ul>
+                    <li><a href="#header"><strong>Home</strong></a></li>
+                    <li><a href="#about"><strong> About me</strong></a></li>
+                    <li><a href="#portfolio"><strong> Achivements </strong></a></li>
+                    <li><a href="#contact"><strong>Contact</strong></a></li>
+            
+                </ul>
+            </nav>
 
-                <section class="container">
-                
-                    <div class="header-text">
-                    
-                    <h1>Hellooo, welcome to my chill website :)</h1>
-                    <p> r
-                    </p>   
-               
+            <section class="container">
+
+                <div class="header-text">
+
+                    <h1>Hello, :)</h1>
+                    <p> I am a currently studying Software Engeieerieng at Saxion, and this is my portfolio page. I hope
+                        to show a bit more of myself,
+                        while exploring my creativity. Being a UWC student I have learned a lot about life 
+                    </p>
+
                 </div>
-               
-                <img src="../images/Ivi.jpg" alt="picture of me">
+
+                <img src="./images/Ivi.jpg" alt="picture of me">
             </section>
-        
+
         </section>
 
         <!-- about me section -->
@@ -42,14 +45,12 @@
                 <div class="row">
 
                     <div class="about-col-1">
-                        <img src="../images/Ivana Stojanova.jpg" alt="Photo of me">
+                        <img src="./images/Ivana Stojanova.jpg" alt="Photo of me">
                     </div>
 
                     <div class="about-col-2">
                         <h1>About me</h1>
-                        <p> So hey there! I would repeat some of the stuff from my CV here, just so I keep
-                            proeffesional. I do think CVs are nice but I also appreciate more creativity than a CV</p>
-
+                        <p> So hey there!
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
                             <p class="tab-links" onclick="opentab('skills')">Skills</p>
@@ -58,14 +59,38 @@
 
                         <div class="tab-contents active-tab" id="hobbies">
                             <ul>
-                                <li><span>01/2024 - 06/2023 </span>Kreta Restaurant Mezes and Grill</li>
+                                <li><span>Travelling and Exploring</span>
+                                <p>
+                                    It makes me happy
+                                </p>
+                                </li>
+                             
+
+                                <li><span>Reading </span>
+                                    <p> In posseison of the whole Harry Potter book series, I am a PotterHead (however
+                                        don't make it my personality), lastest
+                                        book I've read : 1984 (proper for the ongoing global politcs)</p>
+                                </li>
+
+
+                                <li><span>Cooking</span>
+                                    <p>I love food, I belive that I live to eat, not the other way around</p>
+                                </li>
+
+                                <li><span>Watching TV shows and movies</span>
+                                    <p>
+
+                                    </p>
+                                </li>
+
                             </ul>
                         </div>
 
                         <div class="tab-contents" id="skills">
                             <ul>
-                                <li><span>Hard skills</span> Github, GitlabJava, AWS, Terraform, C++, C#</li>
-                                <li><span>Langueages</span> English, Macedonian, German, French, Dutch </li>
+                                <li><span>Proggraming languages</span> Java, C++, C#, JavaScript</li>
+                                <li><span>Tools</span> Github, Gitlab, AWS, Terraform</li>
+                                <li><span>Languages</span> English, Macedonian, German, French, Dutch </li>
                             </ul>
                         </div>
 
@@ -87,56 +112,69 @@
         <section id="portfolio">
             <div class="container">
                 <h1 class="sub-title">Things through photos</h1>
-                <p>not too good at drawing, but I appreciate different kind of are, I like music, movies, tv shows art :)</p>
+                <p>not too good at drawing, but I appreciate different kind of are, I like music, movies, tv shows art</p>
 
                 <div class="fun">
 
+                    <section>
+                        <p>I deeply appreciate travelling as a way to grow as a person and celebrate the world around me</p>
+                      
+                        <figure>
+                          <img class="MUWCI" src="../images/travel.JPG" alt="Sunset in front of palm trees">
+                          <figcaption>Bestests sunsets in my old campus</figcaption>
+                        </figure>
+                      
+                        <figure>
+                          <img class="italy" src="../images/Italia.jpg" alt="Lake in Italy">
+                          <figcaption>Summer memories in the Italian Alps</figcaption>
+                        </figure>
+                      </section>
+                      
+                      <section>
+                        <p>Passionate about coding and math—here’s my Math Internal Assessment from high school that I’m proud of:</p>
+                        
+                        <figure>
+                          <object class="mathIA" data="../documents/0082.pdf" width="400" height="500"></object>
+                          <figcaption>Exploring calculus </figcaption>
+                        </figure>
+                      </section>
+                      
 
-                <p>In posseison of the whole Harry Potter, I am a PotterHead (however don't make it my personality - for
-                    a while people were buying me so much Harry Potter so I got bored from that - still apprciate the
-                    books) lastest books I've read : 1984(in this political climate hehe - i also like keeping up with local and
-                    global politics), the 7 husbands of Evelyn Hugo</p>
-
-            
-                <p>I love food, I belive that I live to eat, not the other way around</p>
-                <p>Passionate about coding and math, here's my math Internal Assesment that I did in my High School and I am proud of</p>
-                
-
-           
-            </div>
+                </div>
             </div>
 
         </section>
 
-            <!-- contact -->
+        <!-- contact -->
 
-            <section id="contact">
-                <div class="container">
-                    <p>CONTACT</p>
-                    <div class="social-icons">
-                        <a href="www.linkedin.com/in/ivana-stojanova"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </section>
+        <section id="contact">
+           
+                <h1>Contact</h1>
+                
+                    <a class="linkdin-logo" 
+                    href="www.linkedin.com/in/ivana-stojanova"><i class="fa-brands fa-linkedin"></i></a>
+            
+
+        </section>
 
 
-            <script>
-                var tablinks = document.getElementsByClassName("tab-links");
-                var tabcontents = document.getElementsByClassName("tab-contents");
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
-                function opentab(tabname) {
-                    for (tablink of tablinks) {
-                        tablink.classList.remove("active-link");
-                    }
-
-                    for (tabcontent of tabcontents) {
-                        tabcontent.classList.remove("active-tab");
-                    }
-                    event.currentTarget.classList.add("active-link");
-                    document.getElementById(tabname).classList.add("active-tab");
-
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
                 }
-            </script>
+
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+        </script>
 
 
 
