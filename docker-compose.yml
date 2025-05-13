@@ -1,7 +1,8 @@
 services:
   app:
-    image: nginx:alpine
-    ports:
-      - "83:80"
+    build: ./my-portfolio
     volumes:
-      - ./src:/usr/share/nginx/html:ro
+      - ./my-portfolio:/app
+      - /app/node_modules
+    ports:
+      - "83:5173"
