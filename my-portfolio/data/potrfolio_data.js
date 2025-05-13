@@ -2,7 +2,7 @@ export default [
     {
         title:'Complex Data Structers',
         imgUrl:'src/assets/images/Algorithms.jpg',
-        stack:['Java','JavaDoc','unit testing'],
+        stack:['Java','JavaDoc','Unit testing'],
         link: 'https://github.com/BabyPanda12/Complex-Data-Structures'
     },
     {
