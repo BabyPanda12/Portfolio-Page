@@ -3,7 +3,7 @@ export default [
         year: '2023',
         title: 'Saxion University of Applied Science',
         duration: '1.5 years',
-        imgUrl: ["../src/assets/images/intro.JPG"],
+        imgUrl: ["../src/assets/images/Intro.jpg"],
         captions: ["During the introduction week of Saxion (I'm the girl with brunnete hair)"],
         details:"Currently studing here - this is where I’ve gained most of my IT knowledge and met some amazing friends!"
     }, {
