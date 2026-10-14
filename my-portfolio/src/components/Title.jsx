@@ -1,13 +1,9 @@
-import React from 'react';
-
-function Title({ children, id }) {
+function Title({ children, eyebrow, id }) {
    return (
-      <h1
-         id={id && id}
-         className="text-2xl font-bold underline underline-offset-8 decoration-4 mb-5 text-stone-900 dark:text-white"
-      >
-         {children}
-      </h1>
+      <div className="section-heading">
+         {eyebrow && <p className="section-kicker">{eyebrow}</p>}
+         <h2 className="section-title" id={id}>{children}</h2>
+      </div>
    )
 }
 

@@ -1,21 +1,17 @@
-import React from 'react';
-import portfolio from '../../data/potrfolio_data';
-import PortfolioItem from './PortfolioItem';
+import cvUrl from '../data/Ivana Stojanova_CV.pdf?url'
+import Title from './Title'
 
 function Portfolio() {
    return (
-      <div className="flex flex-col md:flex-row items-center justify-center">
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {portfolio.map(project => (
-               <PortfolioItem 
-                  imgUrl={project.imgUrl}
-                  title={project.title}
-                  stack={project.stack}
-                  link={project.link}
-               />
-            ))}
+      <section className="section" id="work" aria-labelledby="work-title">
+         <Title id="work-title" eyebrow="A little about my experience">My CV</Title>
+         <div className="cv-actions">
+            <a className="button" href={cvUrl} download="Ivana-Stojanova-CV.pdf">
+               Download my CV <span aria-hidden="true">↓</span>
+            </a>
          </div>
-      </div>
+         <iframe className="cv-preview" src={cvUrl} title="Ivana Stojanova CV" />
+      </section>
    )
 }
 

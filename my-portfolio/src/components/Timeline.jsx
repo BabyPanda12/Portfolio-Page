@@ -1,26 +1,18 @@
-import React from 'react';
-import timeline from '../../data/timeline';
+import timeline from '../data/education'
 import TimelineItem from './TimelineItem';
 import Title from './Title';
 
 function Timeline() {
    return (
-      <div className="flex flex-col md:flex-row justify-center my-20">
-         <div className="w-full md:w-7/12">
-            <Title>Timeline</Title>
-            {timeline.map(item => (
-               <TimelineItem 
-                  year={item.year}
-                  title={item.title}
-                  duration={item.duration}
-                  imgUrl={item.imgUrl}
-                  captions={item.captions}
-                  details={item.details}
-               />
-            ))}
-           
+      <section className="section" id="journey" aria-labelledby="journey-title">
+         <Title id="journey-title" eyebrow="The places that shaped me">A little life timeline</Title>
+         <p className="section-description">
+            School has taken me across countries, into new communities, and through plenty of growing-up moments.
+         </p>
+         <div className="timeline">
+            {timeline.map(item => <TimelineItem key={`${item.year}-${item.title}`} {...item} />)}
          </div>
-      </div>
+      </section>
    )
 }
 

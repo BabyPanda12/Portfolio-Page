@@ -3,6 +3,6 @@ services:
     build: ./my-portfolio
     volumes:
       - ./my-portfolio:/app
-      - /app/node_modules
+      - /ivana-portfolio/node_modules
     ports:
       - "83:5173"

@@ -1,21 +1,12 @@
-import React from 'react';
-import 'font-awesome/css/font-awesome.min.css';
-
-
 function Footer() {
     return (
-        <div className="flex flex-wrap justify-center gap-2">
-            <a
-                href="https://linkedin.com/in/ivana-stojanova"
-                className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
-                <i className="fa fa-linkedin"></i> 
-                 </a>
-            <a
-                href="https://github.com/BabyPanda12"
-                className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
-                <i className="fa fa-github"></i> 
-            </a>
-        </div>
+        <footer className="site-footer">
+            <p className="footer-note">Made with a little code & a lot of whimsy <span aria-hidden="true">✿</span></p>
+            <nav className="social-links" aria-label="Social links">
+                <a className="social-link" href="https://linkedin.com/in/ivana-stojanova" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+                <a className="social-link" href="https://github.com/BabyPanda12" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+            </nav>
+        </footer>
     );
 }
 

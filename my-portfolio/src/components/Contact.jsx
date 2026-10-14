@@ -1,43 +1,32 @@
-import React from 'react';
 import Title from './Title';
 
 function Contact() {
    return (
-      <div className="flex flex-col mb-10 mx-auto">
-         <div className="flex justify-center items-center">
-            <form
-               action="https://getform.io/f/aejrqjkb"
-               method="POST"
-               className="flex flex-col w-full md:w-7/12"
-            >
-               <Title>Contact</Title>
-               <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
-               />
-               <input
-                  type="text"
-                  name="email"
-                  placeholder="Email"
-                  className="my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none"
-               />
-               <textarea
-                  name="message"
-                  placeholder="Message"
-                  rows="10"
-                  className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
-               />
-               <button
-                  type="submit"
-                  className="px-4 py-2 text-white bg-purple-600 rounded hover:bg-green-700"
-               >
-                 Contact me
-               </button>
+      <section className="section contact-section" id="contact" aria-labelledby="contact-title">
+         <div className="contact-card">
+            <div className="contact-copy">
+               <p className="section-kicker">The best things start with hello</p>
+               <h2 id="contact-title">Have a little note for me?</h2>
+               <p>I’m always happy to talk about projects, ideas, or the next thing I should read.</p>
+               <span className="contact-doodle" aria-hidden="true">✿ ↝</span>
+            </div>
+            <form action="https://getform.io/f/aejrqjkb" method="POST" className="contact-form">
+               <label>
+                  Your name
+                  <input type="text" name="name" placeholder="What should I call you?" autoComplete="name" required />
+               </label>
+               <label>
+                  Your email
+                  <input type="email" name="email" placeholder="you@example.com" autoComplete="email" required />
+               </label>
+               <label>
+                  Your message
+                  <textarea name="message" placeholder="Write me a little note..." required />
+               </label>
+               <button className="button" type="submit">Send a note <span aria-hidden="true">♡</span></button>
             </form>
          </div>
-      </div>
+      </section>
    )
 }
 
